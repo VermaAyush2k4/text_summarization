@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>Smart Text Summarizer</span>
+            </div>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content-wrapper">
+                <div class="input-section">
+                    <h3>Input Text</h3>
+                    <div class="input-options">
+                        <div class="paste-option">
+                            <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+                            <div class="word-count">Words: <span id="wordCount">0</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-options">
+                        <div class="slider-container">
+                            <div class="slider-label">Summary Length</div>
+                            <div class="slider-wrapper">
+                                <input type="range" id="summaryLength" min="1" max="10" value="5">
+                                <div class="slider-value">5</div>
+                            </div>
+                            <div class="slider-info">
+                                <span>1</span>
+                                <span>10</span>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <label>
+                                <input type="checkbox" id="editMode"> Editable Summary
+                            </label>
+                            <button onclick="summarizeText()" class="summarize-button">
+                                <i class="fas fa-magic"></i> Summarize
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="output-section">
+                    <h3>Summary</h3>
+                    <div class="summary-box" id="summaryResult" contenteditable="false">
+                        <div class="summary-placeholder">
+                            <i class="fas fa-magic"></i>
+                            <p>Your summary will appear here...</p>
+                        </div>
+                    </div>
+                    <div class="summary-actions">
+                        <button id="copyButton" onclick="copySummary()" class="action-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                        <button id="downloadButton" onclick="downloadSummary()" class="action-button">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                        <div class="summary-stats">
+                            <span>Words: <span id="summaryWordCount">0</span></span>
+                            <span>Time: <span id="processingTime">0</span>s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>Smart Text Summarizer uses advanced AI to provide quick and accurate text summarization.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@summarizer.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Smart Text Summarizer. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
