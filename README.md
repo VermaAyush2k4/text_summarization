@@ -31,7 +31,6 @@ cd text_summarisation
 docker-compose build
 docker-compose up
 ```
-4. Access the application at http://localhost:5000
 
 ### Option 2: Local Installation
 
@@ -53,7 +52,6 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-5. Access the application at http://localhost:5000
 
 ## Project Structure
 
