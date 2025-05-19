@@ -124,9 +124,6 @@ MIT License
 4. Push to the branch
 5. Create a Pull Request
 
-## Support
-
-For support, please open an issue in the repository.
 
 ## Installation
 
@@ -191,9 +188,6 @@ text_summarisation/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
