@@ -5,7 +5,6 @@ A web-based text summarization application that uses AI to generate concise summ
 ## Features
 
 - Text summarization with adjustable length (1-10 sentences)
-- File upload support (PDF, DOCX, PPTX)
 - Real-time word count display
 - Copy and download summary options
 - Editable summary output
@@ -16,7 +15,6 @@ A web-based text summarization application that uses AI to generate concise summ
 
 - Python 3.10 or higher
 - Docker Desktop (for containerized deployment)
-- At least 4GB RAM (recommended for AI model)
 
 ## Installation
 
