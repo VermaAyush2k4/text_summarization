@@ -120,31 +120,6 @@ docker-compose logs -f
 5. Create a Pull Request
 
 
-## Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd text_summarisation
-```
-
-2. Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the application:
-```bash
-python app.py
-```
-
-
 ## Dependencies
 
 - Flask 3.0.0
