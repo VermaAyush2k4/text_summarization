@@ -71,7 +71,7 @@ text_summarisation/
 
 ## Using the Application
 
-1. Paste text directly into the text area or upload a file (PDF, DOCX, PPTX)
+1. Paste text directly into the text area. 
 2. Adjust the summary length using the slider (1-10 sentences)
 3. Click "Generate Summary" to create a summary
 4. Edit the summary if needed
@@ -110,9 +110,6 @@ docker-compose logs -f
 - PyPDF2: PDF handling
 - PDFMiner: Alternative PDF text extraction
 
-## License
-
-MIT License
 
 ## Contributing
 
@@ -165,18 +162,6 @@ python app.py
 4. Click "Summarize" to generate the summary
 5. Use the "Copy" or "Download" buttons to save your summary
 
-## Project Structure
-
-```
-text_summarisation/
-├── app.py              # Main Flask application
-├── requirements.txt    # Project dependencies
-├── static/
-│   ├── script.js      # Frontend JavaScript
-│   └── style.css      # Frontend styling
-└── templates/
-    └── index.html     # Main HTML template
-```
 
 ## Contributing
 
