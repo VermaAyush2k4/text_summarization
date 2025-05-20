@@ -99,10 +99,6 @@ docker-compose down
 docker-compose logs -f
 ```
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6bd5438063c3b3b38559e66672edeae06b535028
 ## Dependencies
 
 - Flask 3.0.0
@@ -129,10 +125,6 @@ docker-compose logs -f
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6bd5438063c3b3b38559e66672edeae06b535028
 ## Acknowledgments
 
 - Hugging Face Transformers library
