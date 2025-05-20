@@ -31,7 +31,6 @@ cd text_summarisation
 docker-compose build
 docker-compose up
 ```
-4. Access the application at http://localhost:5000
 
 ### Option 2: Local Installation
 
@@ -53,7 +52,6 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-5. Access the application at http://localhost:5000
 
 ## Project Structure
 
@@ -74,7 +72,7 @@ text_summarisation/
 ## Using the Application
 
 1. Paste text directly into the text area. 
-2. Adjust the summary length using the slider (1-10 sentences).
+2. Adjust the summary length using the slider (1-10 sentences)
 3. Click "Generate Summary" to create a summary
 4. Edit the summary if needed
 5. Copy or download the summary using the provided buttons
@@ -101,6 +99,10 @@ docker-compose down
 docker-compose logs -f
 ```
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6bd5438063c3b3b38559e66672edeae06b535028
 ## Dependencies
 
 - Flask 3.0.0
@@ -127,6 +129,10 @@ docker-compose logs -f
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6bd5438063c3b3b38559e66672edeae06b535028
 ## Acknowledgments
 
 - Hugging Face Transformers library
