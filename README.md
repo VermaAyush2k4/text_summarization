@@ -1,6 +1,6 @@
 # Smart Text Summarizer
 
-A web-based text summarization application that uses AI to generate concise summaries from long text documents. The application supports both text input and file uploads (PDF, DOCX, PPTX) and uses the BART model from Hugging Face for summarization.
+A web-based text summarization application that uses AI to generate concise summaries from long text documents. The application supports both text input and uses the BART model from Hugging Face for summarization.
 
 ## Features
 
