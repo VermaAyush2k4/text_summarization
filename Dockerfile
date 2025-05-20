@@ -1,21 +1,33 @@
-FROM python:3.10-slim
+FROM python:3.10-bullseye
 
+# Set working directory
 WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
+    libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first to leverage Docker cache
+# Install Python dependencies with retry
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir --retries 5 --timeout 60 -r requirements.txt
 
-# Copy the rest of the application
+# Copy application code
 COPY . .
 
-# Expose the port the app runs on
+# Set environment variables
+ENV FLASK_APP=app.py
+ENV FLASK_ENV=development
+ENV PYTHONPATH=/app
+
+# Configure Flask to serve static files
+ENV FLASK_RUN_HOST=0.0.0.0
+ENV FLASK_RUN_PORT=5000
+
+# Expose port
 EXPOSE 5000
 
-# Command to run the application
-CMD ["python", "app.py"]
+# Run the application with explicit python command
+CMD ["python", "-m", "flask", "run"]

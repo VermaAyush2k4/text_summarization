@@ -1,11 +1,10 @@
 # Smart Text Summarizer
 
-A web-based text summarization application that uses AI to generate concise summaries from long text documents. The application supports both text input and file uploads (PDF, DOCX, PPTX) and uses the BART model from Hugging Face for summarization.
+A web-based text summarization application that uses AI to generate concise summaries from long text documents. The application supports both text input and uses the BART model from Hugging Face for summarization.
 
 ## Features
 
 - Text summarization with adjustable length (1-10 sentences)
-- File upload support (PDF, DOCX, PPTX)
 - Real-time word count display
 - Copy and download summary options
 - Editable summary output
@@ -16,7 +15,6 @@ A web-based text summarization application that uses AI to generate concise summ
 
 - Python 3.10 or higher
 - Docker Desktop (for containerized deployment)
-- At least 4GB RAM (recommended for AI model)
 
 ## Installation
 
@@ -75,8 +73,8 @@ text_summarisation/
 
 ## Using the Application
 
-1. Paste text directly into the text area or upload a file (PDF, DOCX, PPTX)
-2. Adjust the summary length using the slider (1-10 sentences)
+1. Paste text directly into the text area. 
+2. Adjust the summary length using the slider (1-10 sentences).
 3. Click "Generate Summary" to create a summary
 4. Edit the summary if needed
 5. Copy or download the summary using the provided buttons
@@ -105,58 +103,6 @@ docker-compose logs -f
 
 ## Dependencies
 
-- Flask: Web framework
-- Transformers: For AI model
-- PyTorch: AI framework
-- NLTK: Natural Language Processing
-- Python-DOCX: Word document handling
-- Python-PPTX: PowerPoint handling
-- PyPDF2: PDF handling
-- PDFMiner: Alternative PDF text extraction
-
-## License
-
-MIT License
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## Support
-
-For support, please open an issue in the repository.
-
-## Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd text_summarisation
-```
-
-2. Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the application:
-```bash
-python app.py
-```
-
-
-## Dependencies
-
 - Flask 3.0.0
 - Transformers 4.36.2
 - PyTorch 2.0.0+
@@ -172,18 +118,6 @@ python app.py
 4. Click "Summarize" to generate the summary
 5. Use the "Copy" or "Download" buttons to save your summary
 
-## Project Structure
-
-```
-text_summarisation/
-├── app.py              # Main Flask application
-├── requirements.txt    # Project dependencies
-├── static/
-│   ├── script.js      # Frontend JavaScript
-│   └── style.css      # Frontend styling
-└── templates/
-    └── index.html     # Main HTML template
-```
 
 ## Contributing
 
@@ -192,10 +126,6 @@ text_summarisation/
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
